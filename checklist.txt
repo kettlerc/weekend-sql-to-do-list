@@ -1,21 +1,26 @@
 SETUP
-[ ] npm init
-[ ] install express
-[ ] install pg
-[ ] install body-parser
-[ ] file structure
-    [ ] server
-    [ ] public
-    [ ] modules
-    [ ] scripts
-    [ ] styles
-    [ ] routes
-[ ] create files
+[X] npm init
+[X] install express
+[X] install pg
+[X] install body-parser
+[X] install JQuery
+[X] file structure
+    [X] server
+    [X] public
+    [X] modules
+    [X] scripts
+    [X] styles
+    [X] routes
+[X] create files
+[X] gitignore
+[X] npm start
 [ ] create database
 
 CLIENT
+[X] html setup
 [ ] html input form
-[ ] html headers and divs
+[ ] html page layout
+[X] JS/JQ setup
 [ ] CSS styling
 
 SERVER
