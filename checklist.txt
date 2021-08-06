@@ -24,8 +24,8 @@ CLIENT
 [ ] CSS styling
 
 SERVER
-[ ] server setup
-[ ] link to router & pool
+[X] server setup
+[X] link to router & pool
 
 ENDPOINTS
 [ ] GET
