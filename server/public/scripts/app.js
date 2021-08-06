@@ -3,7 +3,8 @@ $(document).ready(onReady);
 
 function onReady() {
     console.log('JQ');
-    $('#newTaskForm').on('click', '#addBtn', addTask)
+    $('#newTaskForm').on('click', '#addBtn', addTask);
+    $("#taskList").on('click', '.deleteBtn', deleteTask)
     getTasks();
 };
 
@@ -16,7 +17,11 @@ function getTasks() {
     }).then((response) => {
         for (let i=0; i<response.length; i++) {
             $("#taskList").append(`
-                <li>${response[i].task}</li>
+            <tr data-id="${response[i].id}">
+                <td>${response[i].task}</td>
+                <td>${response[i].isComplete}</td>
+                <td><button class="deleteBtn">Delete</button>
+            </tr>
             `);
         }
     }).catch((err) => {
@@ -51,3 +56,7 @@ function addTask() {
 
 
 //DELETE
+function deleteTask() {
+    console.log('delete button working');
+    
+}
