@@ -14,11 +14,11 @@ SETUP
 [X] create files
 [X] gitignore
 [X] npm start
-[ ] create database
+[X] create database
 
 CLIENT
 [X] html setup
-[ ] html input form
+[X] html input form
 [ ] html page layout
 [X] JS/JQ setup
 [ ] CSS styling
