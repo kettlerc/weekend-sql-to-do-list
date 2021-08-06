@@ -5,7 +5,19 @@ const pool = require('../modules/pool');
 
 
 //GET
-
+router.get('/', (req, res) =>{
+    let sqlQuery = `
+        SELECT * FROM "tasks"
+        ORDER BY "id" ASC;
+    `;
+    pool.query(sqlQuery)
+        .then((dbRes) => {
+            res.send(dbRes.rows);
+        }).catch((err) => {
+            console.log('GET failed', err);
+            res.sendStatus(500);
+        });
+});
 
 
 //POST
