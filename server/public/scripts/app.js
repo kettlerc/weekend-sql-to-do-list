@@ -15,7 +15,7 @@ function getTasks() {
         url: '/taskmanager'
     }).then((response) => {
         for (let i=0; i<response.length; i++) {
-            $("taskList").append(`
+            $("#taskList").append(`
                 <li>${response[i].task}</li>
             `);
         }
