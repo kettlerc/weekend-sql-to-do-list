@@ -14,7 +14,8 @@ function onReady() {
 function addTask() {
     console.log('add task button working');
     let objectToSend = {
-        task: $('#newTask').val()
+        task: $('#newTask').val(),
+        isComplete: false
     }
     console.log('new task', objectToSend);
     $.ajax({
