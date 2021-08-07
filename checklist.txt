@@ -38,13 +38,24 @@ ENDPOINTS
     [X] refreshes DOM
     [X] CLIENT
     [X] SERVER
-[ ] PUT
-    [ ] change status to complete in db
-    [ ] mark change in status to the dom
-    [ ] CLIENT
-    [ ] SERVER
-[ ] DELETE
-    [ ] deletes task from db
-    [ ] refreshes DOM
-    [ ] CLIENT
-    [ ] SERVER
+[X] PUT
+    [X] change status to complete in db
+    [X] mark change in status to the dom
+    [X] CLIENT
+    [X] SERVER
+[X] DELETE
+    [X] deletes task from db
+    [X] refreshes DOM
+    [X] CLIENT
+    [X] SERVER
+
+
+STRETCH
+[ ] Styling
+    [ ] add bootstrap
+    [ ] buttons toggle between green and red
+    [ ] responsive layout
+[ ] confirm delete
+    [ ] create Sweet Alert to confirm delete
+[ ] time completed
+    [ ] record when the task was completed
