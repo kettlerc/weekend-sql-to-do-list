@@ -14,11 +14,11 @@ SETUP
 [X] create files
 [X] gitignore
 [X] npm start
-[ ] create database
+[X] create database
 
 CLIENT
 [X] html setup
-[ ] html input form
+[X] html input form
 [ ] html page layout
 [X] JS/JQ setup
 [ ] CSS styling
@@ -28,23 +28,34 @@ SERVER
 [X] link to router & pool
 
 ENDPOINTS
-[ ] GET
-    [ ] gets tasks from the db
-    [ ] appends to DOM
-    [ ] CLIENT
-    [ ] SERVER
-[ ] POST
-    [ ] posts new tasks to db
-    [ ] refreshes DOM
-    [ ] CLIENT
-    [ ] SERVER
-[ ] PUT
-    [ ] change status to complete in db
-    [ ] mark change in status to the dom
-    [ ] CLIENT
-    [ ] SERVER
-[ ] DELETE
-    [ ] deletes task from db
-    [ ] refreshes DOM
-    [ ] CLIENT
-    [ ] SERVER
+[X] GET
+    [X] gets tasks from the db
+    [X] appends to DOM
+    [X] CLIENT
+    [X] SERVER
+[X] POST
+    [X] posts new tasks to db
+    [X] refreshes DOM
+    [X] CLIENT
+    [X] SERVER
+[X] PUT
+    [X] change status to complete in db
+    [X] mark change in status to the dom
+    [X] CLIENT
+    [X] SERVER
+[X] DELETE
+    [X] deletes task from db
+    [X] refreshes DOM
+    [X] CLIENT
+    [X] SERVER
+
+
+STRETCH
+[ ] Styling
+    [ ] add bootstrap
+    [ ] buttons toggle between green and red
+    [ ] responsive layout
+[ ] confirm delete
+    [ ] create Sweet Alert to confirm delete
+[ ] time completed
+    [ ] record when the task was completed
