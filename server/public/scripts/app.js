@@ -29,7 +29,6 @@ function getTasks() {
     });
 }
 
-
 //POST
 function addTask() {
     console.log('add task button working');
@@ -50,13 +49,22 @@ function addTask() {
     });
 }
 
-
 //PUT
 
 
 
 //DELETE
 function deleteTask() {
-    console.log('delete button working');
+    const taskId = $(this).parents('tr').data('id');
+    console.log(taskId);
     
+    $.ajax({
+        method: 'DELETE',
+        url: `/taskmanager/${taskId}`
+    }).then((response) => {
+        console.log(response);
+        getTasks();
+    }).catch((err) => {
+        console.log('DELETE err', err);
+    });
 }

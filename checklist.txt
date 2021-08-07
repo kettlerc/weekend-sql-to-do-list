@@ -28,16 +28,16 @@ SERVER
 [X] link to router & pool
 
 ENDPOINTS
-[ ] GET
-    [ ] gets tasks from the db
-    [ ] appends to DOM
-    [ ] CLIENT
-    [ ] SERVER
-[ ] POST
-    [ ] posts new tasks to db
-    [ ] refreshes DOM
-    [ ] CLIENT
-    [ ] SERVER
+[X] GET
+    [X] gets tasks from the db
+    [X] appends to DOM
+    [X] CLIENT
+    [X] SERVER
+[X] POST
+    [X] posts new tasks to db
+    [X] refreshes DOM
+    [X] CLIENT
+    [X] SERVER
 [ ] PUT
     [ ] change status to complete in db
     [ ] mark change in status to the dom
