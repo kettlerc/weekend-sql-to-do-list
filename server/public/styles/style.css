@@ -1,0 +1,43 @@
+body {
+    background-color: #fefae0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: #283618;
+}
+
+#newTaskForm {
+    margin: 30px;
+}
+
+table { 
+    border-spacing: 5px;
+    border-collapse: separate;
+}
+
+thead {
+    text-align: left;
+    font-size: larger;
+}
+
+td {
+    padding: 6px;
+}
+
+.toggleTransfer {
+    background-color: #f28482;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.taskDone {
+    background-color: #84a59d;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.deleteBtn {
+    border-radius: 10px;
+    padding: 7px;
+}

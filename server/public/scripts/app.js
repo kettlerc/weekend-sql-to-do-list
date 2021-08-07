@@ -21,7 +21,7 @@ function getTasks() {
             <tr data-id="${response[i].id}">
                 <td>${response[i].task}</td>
                 <td><button class="toggleTransfer">${response[i].isComplete ? 
-                    "Completed" : "Still To Do"}</button></td>
+                    "Checked Off!" : "Still To Do"}</button></td>
                 <td><button class="deleteBtn">Delete</button>
             </tr>
             `);
@@ -53,6 +53,7 @@ function addTask() {
 
 //PUT
 function completeTask() {
+    $(this).toggleClass("taskDone");
     const taskId = $(this).parents('tr').data('id');
     console.log(taskId);
 

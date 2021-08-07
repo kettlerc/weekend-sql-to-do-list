@@ -22,6 +22,9 @@ CLIENT
 [ ] html page layout
 [X] JS/JQ setup
 [ ] CSS styling
+    [X] page background color
+    [X] font family/size
+    [ ] text || background color changes on button click
 
 SERVER
 [X] server setup
