@@ -54,8 +54,17 @@ function addTask() {
 
 //PUT
 function completeTask() {
-    console.log('Task completed button working');
-    
+    const taskId = $(this).parents('tr').data('id');
+    console.log(taskId);
+
+    $.ajax({
+        method: 'PUT',
+        url: `/taskmanager/${taskId}`
+    }).then((response) => {
+        getTasks(response);
+    }).catch((err) => {
+        console.log('PUT err', err);
+    });
 }
 
 

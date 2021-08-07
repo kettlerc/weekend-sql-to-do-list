@@ -44,7 +44,23 @@ router.post('/', (req, res) => {
 
 
 //PUT
-
+router.put('/:id', (req, res) => {
+    let sqlQuery =`
+        UPDATE "tasks"
+        SET "isComplete" = NOT "isComplete"
+        WHERE "id" = $1;
+    `;
+    let sqlParams = [
+        req.params.id
+    ];
+    pool.query(sqlQuery, sqlParams)
+        .then((dbRes) => {
+            res.sendStatus(200);
+        }).catch((err) => {
+            console.log('Update err', err);
+            res.sendStatus(500);
+        });
+});
 
 
 //DELETE
