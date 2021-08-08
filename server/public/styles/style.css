@@ -1,0 +1,45 @@
+body {
+    background-color: #fefae0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: #3c5c19;
+}
+
+#newTaskForm {
+    margin: 30px;
+}
+
+table { 
+    border-spacing: 5px;
+    border-collapse: separate;
+}
+
+thead {
+    text-align: left;
+    font-size: larger;
+}
+
+td {
+    padding: 6px;
+}
+
+.taskDone {
+    background-color: #f7ede2;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.toggleTask {
+    background-color: #84a59d;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+
+.deleteBtn {
+    background-color: #f28482;
+    border-radius: 10px;
+    padding: 7px;
+}
