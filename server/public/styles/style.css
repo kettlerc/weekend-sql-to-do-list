@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-    color: #283618;
+    color: #3c5c19;
 }
 
 #newTaskForm {
@@ -25,19 +25,21 @@ td {
     padding: 6px;
 }
 
-.toggleTransfer {
-    background-color: #f28482;
+.taskDone {
+    background-color: #f7ede2;
     border-radius: 10px;
     padding: 7px;
 }
 
-.taskDone {
+.toggleTask {
     background-color: #84a59d;
     border-radius: 10px;
     padding: 7px;
 }
 
+
 .deleteBtn {
+    background-color: #f28482;
     border-radius: 10px;
     padding: 7px;
 }

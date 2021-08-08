@@ -19,12 +19,12 @@ SETUP
 CLIENT
 [X] html setup
 [X] html input form
-[ ] html page layout
+[X] html page layout
 [X] JS/JQ setup
-[ ] CSS styling
+[X] CSS styling
     [X] page background color
     [X] font family/size
-    [ ] text || background color changes on button click
+    [X] text || background color changes on button click
 
 SERVER
 [X] server setup

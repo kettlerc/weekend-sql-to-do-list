@@ -5,7 +5,8 @@ function onReady() {
     console.log('JQ');
     $('#newTaskForm').on('click', '#addBtn', addTask);
     $("#taskList").on('click', '.deleteBtn', deleteTask);
-    $("#taskList").on('click', '.toggleTransfer', completeTask);
+    $("#taskList").on('click', '.toggleTask', completeTask);
+    
     getTasks();
 };
 
@@ -20,8 +21,11 @@ function getTasks() {
             $("#taskList").append(`
             <tr data-id="${response[i].id}">
                 <td>${response[i].task}</td>
-                <td><button class="toggleTransfer">${response[i].isComplete ? 
-                    "Checked Off!" : "Still To Do"}</button></td>
+                <td>
+                    <button class="${response[i].isComplete ? "taskDone" : "toggleTask"}">
+                        ${response[i].isComplete ? "Checked Off!" : "Complete"}
+                    </button>
+                </td>
                 <td><button class="deleteBtn">Delete</button>
             </tr>
             `);
@@ -53,7 +57,6 @@ function addTask() {
 
 //PUT
 function completeTask() {
-    $(this).toggleClass("taskDone");
     const taskId = $(this).parents('tr').data('id');
     console.log(taskId);
 
