@@ -25,7 +25,7 @@ CLIENT
     [X] page background color
     [X] font family/size
     [X] text || background color changes on button click
-
+    
 SERVER
 [X] server setup
 [X] link to router & pool

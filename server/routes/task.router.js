@@ -4,7 +4,7 @@ const pg = require('pg');
 const pool = require('../modules/pool');
 
 
-//GET
+//GET endpoint to retrieve all data in the database
 router.get('/', (req, res) =>{
     let sqlQuery = `
         SELECT * FROM "tasks"
@@ -20,7 +20,7 @@ router.get('/', (req, res) =>{
 });
 
 
-//POST
+//POST endpoint to add new task to database
 router.post('/', (req, res) => {
     let sqlQuery = `
         INSERT INTO "tasks"
@@ -43,7 +43,7 @@ router.post('/', (req, res) => {
 });
 
 
-//PUT
+//PUT endpoint to change a task from incomplete to complete
 router.put('/:id', (req, res) => {
     let sqlQuery =`
         UPDATE "tasks"
@@ -63,7 +63,7 @@ router.put('/:id', (req, res) => {
 });
 
 
-//DELETE
+//DELETE endpoint to remove task from the database
 router.delete('/:id', (req, res) => {
     let sqlQuery = `
         DELETE FROM "tasks"
